@@ -1,0 +1,22 @@
+<html> 
+  <head>
+    <script src="./jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script src="./Escrow.js"></script> 
+  </head> 
+  <body> 
+  	<h1>Escrow your Ether</h1>
+    <h3>Step 1: Buyer deposits ether</h2>
+    <td>Amount:</td>
+    <td><input type="text" id="amount"/> </td>
+    <td><button onclick="buyerDeposit()">Deposit</button></td>
+    <h3>Step 2: Seller confirms that item has been sent</h2>
+    <td><button onclick="itemSentConfirm()">Confirm</button></td>
+    <h3>Step 3: Buyer confirms delivery</h2>
+    <td><button onclick="itemRecievedConfirm()">Confirm</button></td>
+    <h3>Step 4: Buyer pays Seller</h2>
+    <td><button onclick="sellerPaid()">Pay Seller</button></td>
+    <h3>Refund Buyer</h2>
+    <td><button onclick="buyerRefunded()">Refund</button></td>
+  </body> 
+</html>
